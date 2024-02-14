@@ -21,7 +21,9 @@ h6,
 p,
 ul,
 ol,
-li {
+li,
+a,
+button {
   margin: 0;
   padding: 0;
 }
@@ -32,9 +34,15 @@ a {
 
 button,
 input {
+  border: none;
+  background-color: transparent;
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  cursor: pointer;
 }
 
 ul,

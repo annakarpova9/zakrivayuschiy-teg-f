@@ -1,0 +1,25 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P-Regular';
+  --weight-font-main-text: 400;
+  --weight-font-title-text: 700;
+
+  --bg-color: #fff;
+  --main-color: #000;
+  --dialog-bg-color: rgba(0, 0, 0, 0.75);
+  
+  --bg-gradient-color-stripes: #d3d3d3;
+  --bg-gradient-color-main-from: #e7e7e7;
+  --bg-gradient-color-main-to: #1a1a1a;
+  --bg-gradient-start-percent: 0.01%;
+
+  --stroke-color-label: #fff;
+
+  --color-button-text: #fff;
+
+  --heart-contour-color: #000;
+  --heart-fill-color: #FF0000;
+  --heart-accent-color: #000;
+  --heart-main-body-color: #FF0000;
+}
