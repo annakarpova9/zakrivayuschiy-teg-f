@@ -12,7 +12,19 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+@keyframes button-pointer {
+
+  from {
+    inset-inline-start: -20px;
+  }
+
+  to {
+    inset-inline-start: -16px;
+  }
+}
+
 @keyframes like-scale {
+
   from {
     scale: 1;
   }
@@ -23,6 +35,7 @@
 }
 
 @keyframes like-sparks {
+
   from {
     opacity: 0;
   }

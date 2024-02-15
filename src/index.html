@@ -16,38 +16,6 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <img
-      src="./images/Light - Mobile.png"
-      class="pixel-perfect-image-light-mobile"
-    />
-    <img
-      src="./images/Light - Desktop.png"
-      class="pixel-perfect-image-light-desktop"
-    />
-    <img
-      src="./images/Dark - Mobile.png"
-      class="pixel-perfect-image-dark-mobile"
-    />
-    <img
-      src="./images/Dark - Desktop.png"
-      class="pixel-perfect-image-dark-desktop"
-    />
-    <img
-      src="./images/Light - Mobile - Dialog.png"
-      class="pixel-perfect-image-light-mobile-dialog"
-    />
-    <img
-      src="./images/Light - Dialog_Desktop.png"
-      class="pixel-perfect-image-light-desktop-dialog"
-    />
-    <img
-      src="./images/Dark - Mobile - Dialog.png"
-      class="pixel-perfect-image-dark-mobile-dialog"
-    />
-    <img
-      src="./images/Dark - Dialog_Desktop.png"
-      class="pixel-perfect-image-dark-desktop-dialog"
-    />
     <header
       class="header size-container bg-container border-container font-container text-container"
     >
@@ -155,8 +123,8 @@
         <div class="content__card-img">
           <img
             src="./images/image.png"
-            class="card-image card-image__"
-            alt="Картинка к описанию фритрека и нулевого спринта"
+            class="card-image card-image__filter-brightness"
+            alt="Картинка к описанию начала первого спринта"
           />
           <span class="card-image__label font-container .text-container"
             >&lt;/HTML&gt;</span
@@ -225,8 +193,8 @@
         <div class="content__card-img">
           <img
             src="./images/image.png"
-            class="card-image"
-            alt="Картинка к описанию фритрека и нулевого спринта"
+            class="card-image card-image__filter-contrast"
+            alt="Картинка к описанию завершения первого спринта"
           />
           <span class="card-image__label font-container .text-container"
             >&lt;CSS&gt;</span
@@ -293,8 +261,8 @@
         <div class="content__card-img">
           <img
             src="./images/image.png"
-            class="card-image"
-            alt="Картинка к описанию фритрека и нулевого спринта"
+            class="card-image card-image__filter-blur"
+            alt="Картинка к описанию начала второго спринта"
           />
           <span class="card-image__label font-container .text-container"
             >&lt;desigions&gt;</span
@@ -363,8 +331,8 @@
         <div class="content__card-img">
           <img
             src="./images/image.png"
-            class="card-image"
-            alt="Картинка к описанию фритрека и нулевого спринта"
+            class="card-image card-image__filter-grayscale"
+            alt="Картинка к описанию завершения второго спринта"
           />
           <span class="card-image__label font-container .text-container"
             >care</span
@@ -434,8 +402,8 @@
         <div class="content__card-img">
           <img
             src="./images/image.png"
-            class="card-image"
-            alt="Картинка к описанию фритрека и нулевого спринта"
+            class="card-image card-image__filter-saturate"
+            alt="Картинка к описанию начала третьего спринта"
           />
           <span class="card-image__label font-container .text-container"
             >&lt;support&gt;</span
@@ -502,8 +470,8 @@
         <div class="content__card-img">
           <img
             src="./images/image.png"
-            class="card-image"
-            alt="Картинка к описанию фритрека и нулевого спринта"
+            class="card-image card-image__filter-sepia"
+            alt="Картинка к описанию завершения третьего спринта"
           />
           <span class="card-image__label font-container .text-container"
             >&lt;lifes-style: none;&gt;</span
@@ -570,7 +538,7 @@
         <div class="content__card-img">
           <img
             src="./images/image.png"
-            class="card-image"
+            class="card-image card-image__filter-multiple"
             alt="Картинка к описанию фритрека и нулевого спринта"
           />
           <span class="card-image__label font-container .text-container"
@@ -635,43 +603,39 @@
           </div>
         </div>
       </section>
-      <div
-        class="save-block bg-container border-container font-container text-container__button"
+      <button
+        class="save-block__button content__button border-container bg-container font-container text-container__button"
+        type="button"
+        onclick="window['save__dialog'].showModal()"
+        aria-controls="save__dialog"
       >
-        <button
-          class="save-block__button content__button"
-          type="button"
-          onclick="window['save__dialog'].showModal()"
-          aria-controls="save__dialog"
-        >
-          <svg class="save-block__svg" viewBox="0 0 21 21">
+        <svg class="save-block__svg" viewBox="0 0 21 21">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+      <dialog
+        id="save__dialog"
+        class="save-block__dialog-window bg-container border-container font-container"
+      >
+        <div class="dialog-window__title">
+          <svg class="dialog-window__svg" viewBox="0 0 21 21">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <span class="button__text">Сохранить на память</span>
-        </button>
-        <dialog
-          id="save__dialog"
-          class="save-block__dialog-window bg-container border-container font-container"
-        >
-          <div class="dialog-window__title">
-            <svg class="dialog-window__svg" viewBox="0 0 21 21">
-              <use href="./svg/floppy.svg#floppy"></use>
-            </svg>
-            <span class="dialog-window__title-text"
-              >Вставьте дискету, чтобы продолжить</span
-            >
-          </div>
-          <form method="dialog">
-            <button
-              class="dialog-window__button content__button bg-container border-container"
-              type="button"
-              onclick="window['save__dialog'].close()"
-            >
-              <span class="button__text">ок</span>
-            </button>
-          </form>
-        </dialog>
-      </div>
+          <span class="dialog-window__title-text"
+            >Вставьте дискету, чтобы продолжить</span
+          >
+        </div>
+        <form method="dialog">
+          <button
+            class="dialog-window__button content__button bg-container border-container text-container__button"
+            type="button"
+            onclick="window['save__dialog'].close()"
+          >
+            <span class="button__text">ок</span>
+          </button>
+        </form>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
