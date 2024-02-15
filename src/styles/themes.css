@@ -11,7 +11,6 @@
 
   --bg-color: #fff;
   --main-color: #000;
-  --dialog-bg-color: rgb(0 0 0 / 0.75);
 
   --bg-gradient-color-stripes: #d3d3d3;
   --bg-gradient-color-main-from: #e7e7e7;
@@ -23,9 +22,7 @@
   --color-button-text: #fff;
 
   --heart-contour-color: #000;
-  --heart-fill-color: #f00;
   --heart-accent-color: #000;
-  --heart-main-body-color: #f00;
 }
 
 :root.theme-dark {
@@ -34,7 +31,6 @@
 
   --bg-color: #000;
   --main-color: #00cc14;
-  --dialog-bg-color: rgb(0 0 0 / 0.75);
 
   --bg-gradient-color-stripes: #000;
   --bg-gradient-color-main-from: #007f0c;
@@ -46,9 +42,7 @@
   --color-button-text: #00cc14;
 
   --heart-contour-color: #00cc14;
-  --heart-fill-color: #f00;
   --heart-accent-color: #00cc14;
-  --heart-main-body-color: #f00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,7 +53,6 @@
 
     --bg-color: #000;
     --main-color: #00cc14;
-    --dialog-bg-color: rgb(0 0 0 / 0.75);
 
     --bg-gradient-color-stripes: #000;
     --bg-gradient-color-main-from: #007f0c;
@@ -71,8 +64,6 @@
     --color-button-text: #00cc14;
 
     --heart-contour-color: #00cc14;
-    --heart-fill-color: #f00;
     --heart-accent-color: #00cc14;
-    --heart-main-body-color: #f00;
   }
 }
