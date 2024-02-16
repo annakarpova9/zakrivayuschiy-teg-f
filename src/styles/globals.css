@@ -45,6 +45,10 @@ input {
   cursor: pointer;
 }
 
+button:focus {
+  outline: none;
+}
+
 ul,
 ol,
 li {

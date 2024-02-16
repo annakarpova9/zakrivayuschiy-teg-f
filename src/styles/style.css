@@ -238,7 +238,6 @@
   (text-stroke: 1px var(--stroke-color-label, #fff)) or
     (-webkit-text-stroke: 1px var(--stroke-color-label, #fff))
 ) {
-
   .card-image__label {
     -webkit-text-stroke: 1px var(--stroke-color-label, #fff);
     text-stroke: 1px var(--stroke-color-label, #fff);
@@ -271,13 +270,6 @@
 .card__icon-button {
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
-}
-
-.card__icon-button:focus,
-.card__like-button:focus,
-.content__button:focus,
-.save-block__button:focus {
-  outline: none;
 }
 
 .card__icon-button:focus-visible {
@@ -326,8 +318,7 @@
   transition: translate 0.5s ease-in-out;
 }
 
-.button__text,
-.save-block__svg {
+.button__text {
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
@@ -359,6 +350,9 @@
 
 .save-block__svg {
   display: inline-block;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
   inline-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
   block-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
 }
